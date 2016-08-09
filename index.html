@@ -6,13 +6,14 @@
 	
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/mailus.css" />
 	<link rel="stylesheet" type="text/css" href="assets/font-awesome-4.6.3/css/font-awesome.min.css" />
 		
-	
+	<script type="text/javascript" src="assets/js/trailer.js"></script>
 	</head>
 	<body>
 		
-		<header>
+	<header>
 		<div id="nav_text_box_left"><h1>MOVIES</h1></div>				
 		
 		<div class="nav_text_box_right">
@@ -23,6 +24,8 @@
 			<div class="nav_text_words"><a href="#">CONTACTS</a></div>
 			<div class="nav_text_words"><a href="#" class= "fa fa-search"></a></div>
 		</div>		
+		
+		<div style="visibility: hidden;" class="smart-phone">gsgsg</div>
 	</header>
 	
 	<div id="search"> 
@@ -47,9 +50,9 @@
 		</div>
 		
 		<div class="images">
-			<img id="1t" alt="SpongeBob" src="assets/images/spongebob.jpg" class="size"/>		
-			<img id="2t" alt="Warcraft" src="assets/images/warcraft.jpg" class="size"/>		
-			<img id="3t" alt="Ex Machina" src="assets/images/ex_machina.jpg" class="size"/>
+			<img id = "1" alt="SpongeBob" src="assets/images/spongebob.jpg" class="size"/>		
+			<img alt="Warcraft" src="assets/images/warcraft.jpg" class="size"/>		
+			<img alt="Ex Machina" src="assets/images/ex_machina.jpg" class="size"/>
 		</div>
 		
 	</div>
@@ -430,17 +433,38 @@
 	<div class="mail">
 		<p class="title">Mail us</p>
 		
-		<form action="" method="post">
-		
-		<div id="name-email">
-			<input id="name" type="text" name="name" value="Your Name:">&nbsp;&nbsp;&nbsp;&nbsp;
-			<input id="email" type="text" name="name" value="Your Email:">
+		<div class="content">
+			<span class="input input--yoshiko">
+				<input class="input__field input__field--yoshiko" id="name" type="text" name="name" />
+				<label class="input__label input__label--yoshiko" for="name">
+					<span class="input__label-content input__label-content--yoshiko" data-content="Your Name:"></span>
+				</label>
+			</span>
+
+			<span class="input input--yoshiko">
+				<input class="input__field input__field--yoshiko" id="email" type="text" name="name" />
+				<label class="input__label input__label--yoshiko" for="email">
+					<span class="input__label-content input__label-content--yoshiko"  data-content="Your Email:"></span>
+				</label>
+			</span>
+			<!-- <input id="email" type="text" name="name" value="Your Email:" />  -->
 		</div>
-			<br><br>
-			<textarea id="message" name="message">Your Message: </textarea><br><br><br>
+		<div>
+			<span class="input input--yoshiko">
+				<input class="input__field input__field--yoshiko" id="message" type="text" name="name" />
+				<label class="input__label input__label--yoshiko" for="message">
+					<span class="input__label-content input__label-content--yoshiko" data-content="Your Message:"></span>
+				</label>
+			</span>		
+		</div>
+		
+		<div>
+		
+		</div>
+			<!-- <br><br>
+			<textarea id="message" name="message">Your Message: </textarea><br><br><br> -->
 			<input id="send" type="submit" name="SEND">
-			
-		</form>
+		
 	</div>
 	
 	<div id="google-maps-iframe">
@@ -463,34 +487,30 @@
 		<div id="right-footer">
 			<ul>
 				<li>
-					<button class="fa fa-google-plus"></button>
+					<button class="fa fa-camera-retro"></button>
 				</li>
-				
 				<li>
-					<button class="fa fa-pinterest-p"></button>
-				</li>
-				
+					<button class="fa fa-facebook"></button>
+				</li>				
 				<li>
 					<button class="fa fa-twitter"></button>
 				</li>
-				
 				<li>
-					<button class="fa fa-facebook"></button>
+					<button class="fa fa-pinterest-p"></button>
 				</li>
-				
 				<li>
-					<button class="fa fa-camera-retro"></button>
-				</li>
+					<button class="fa fa-google-plus"></button>
+				</li>				
 			</ul>
 		</div>
 		
 		<div id="contact-us">
-			<button>Contact us!<span class="fa fa-chevron-up"></span></button>
-			
-	</div>
+			<!-- <button>Contact us!<span class="fa fa-chevron-up"></span></button>		 -->	
+		</div>
 	</footer>
 	
 	
-		
+	
 	</body>
+	
 </html>
